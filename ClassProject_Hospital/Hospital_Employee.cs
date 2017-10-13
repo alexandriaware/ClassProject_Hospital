@@ -36,11 +36,10 @@ namespace ClassProject_Hospital
         }
 
         //Method
-        public virtual void GetInfo()
+        public virtual string GetInfo()
         {
-            Console.WriteLine("Employee name: " + employeeName + " " + employeeNum);
+            return employeeName + "\t" + employeeNum;
         }
-        
 
     }
 }

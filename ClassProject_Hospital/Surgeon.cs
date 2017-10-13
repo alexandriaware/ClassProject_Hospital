@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassProject_Hospital
 {
-    class Surgeon : Doctor
+    class Surgeon : Doctor 
     {
         //fields
         private string specialtyArea;
@@ -35,10 +35,9 @@ namespace ClassProject_Hospital
         }
 
         //Method
-        public override void GetInfo()
+        public override string GetInfo()
         {
-            base.GetInfo();
-            Console.Write("\t" + specialtyArea + "\t" + isOperating);
+           return employeeName + "\t" + employeeNum + "\t" + specialtyArea + "\t" + isOperating;
         }
     }
 }

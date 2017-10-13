@@ -36,10 +36,9 @@ namespace ClassProject_Hospital
         }
 
         //Method
-        public override void GetInfo()
+        public override string GetInfo()
         {
-            base.GetInfo();
-            Console.Write("\t" + department + "\t" + onPhone);
+            return employeeName + "\t" + employeeNum + "\t" + department + "\t" + onPhone;
         }
 
 

@@ -39,10 +39,10 @@ namespace ClassProject_Hospital
         }
 
         //Method
-        public override void GetInfo()
+        public override string GetInfo()
         {
-            base.GetInfo();
-            Console.Write("\t" + department + "\t" + numOfPatients);
+            return base.GetInfo() + "\t" + department + "\t" + numOfPatients;
+            
         }
 
 

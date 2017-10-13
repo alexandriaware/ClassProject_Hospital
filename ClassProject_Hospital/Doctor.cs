@@ -31,10 +31,10 @@ namespace ClassProject_Hospital
         }
 
         //Methods
-        public override void GetInfo()
+        public override string GetInfo()
         {
-            base.GetInfo();
-            Console.Write("\t" + specialty);
+            
+            return base.GetInfo() + "\t" + specialty;
         }
 
 

@@ -19,7 +19,13 @@ namespace ClassProject_Hospital
 
             Surgeon surgeon1 = new Surgeon("Doctor Sturgis Ricard", 2418, "Neurosurgery", true);
 
-            Console.WriteLine(surgeon1);
+
+            Console.WriteLine("High St. Hospital Employees: ");
+
+            Console.WriteLine(surgeon1.GetInfo());
+            Console.WriteLine(doctor1.GetInfo());
+            Console.WriteLine(receptionist1.GetInfo());
+            Console.WriteLine(nurse1.GetInfo());
         }
     }
 }
