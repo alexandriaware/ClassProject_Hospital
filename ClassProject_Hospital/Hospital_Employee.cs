@@ -26,13 +26,19 @@ namespace ClassProject_Hospital
         //Constructors
         public Hospital_Employee()
         {
-
+            //default
         }
 
         public Hospital_Employee(string employeeName, int employeeNum)
         {
             this.employeeName = employeeName;
             this.employeeNum = employeeNum;
+        }
+
+        //Method
+        public virtual void GetInfo()
+        {
+            Console.WriteLine("Employee name: " + employeeName + " " + employeeNum);
         }
         
 

@@ -10,6 +10,35 @@ namespace ClassProject_Hospital
     {
         //fields
         protected string specialty;
-        
+
+        //Properties
+        public string Specialty
+        {
+            get { return this.specialty; }
+            
+        }
+
+        //Constructor
+        public Doctor()
+        {
+            //default
+        }
+        public Doctor(string employeeName, int employeeNum, string specialty)
+        {
+            this.employeeName = employeeName;
+            this.employeeNum = employeeNum;
+            this.specialty = specialty; 
+        }
+
+        //Methods
+        public override void GetInfo()
+        {
+            base.GetInfo();
+            Console.Write("\t" + specialty);
+        }
+
+
+
+
     }
 }
